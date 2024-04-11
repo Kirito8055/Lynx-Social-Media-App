@@ -8,7 +8,7 @@ const UserImage = ({ image, size = "60px" }) => {
         width={size}
         height={size}
         alt="user"
-        src={`http://localhost:4013/assets/${image}`}
+        src={`http://lynx-social-media-app-bay.vercel.app/assets/${image}`}
       />
     </Box>
   );

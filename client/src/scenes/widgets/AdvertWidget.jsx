@@ -31,7 +31,7 @@ const AdvertWidget = () => {
           width="100%"
           height="auto"
           alt="advert"
-          src="http://localhost:4013/assets/info4.jpeg"
+          src="http://lynx-social-media-app-bay.vercel.app/assets/info4.jpeg"
           style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
         />
         <FlexBetween>
@@ -60,7 +60,7 @@ const AdvertWidget = () => {
           width="100%"
           height="auto"
           alt="advertisement"
-          src="http://localhost:4013/assets/drstone.jpg"
+          src="http://lynx-social-media-app-bay.vercel.app/assets/drstone.jpg"
           style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
         />
         <FlexBetween>
