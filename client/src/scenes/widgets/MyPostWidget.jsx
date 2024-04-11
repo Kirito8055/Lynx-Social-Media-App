@@ -47,7 +47,7 @@ const MyPostWidget = ({ picturePath }) => {
       formData.append("picturePath", image.name);
     }
 
-    const response = await fetch(`http://lynx-social-media-app-bay.vercel.app/posts`, {
+    const response = await fetch(`https://lynx-social-media-app-bay.vercel.app/posts`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,

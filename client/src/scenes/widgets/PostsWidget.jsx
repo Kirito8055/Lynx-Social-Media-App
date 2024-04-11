@@ -8,7 +8,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
   const token = useSelector((state) => state.token);
 
   const getPosts = async () => {
-    const response = await fetch(`http://lynx-social-media-app-bay.vercel.app/posts/${userId}/feed`, {
+    const response = await fetch(`https://lynx-social-media-app-bay.vercel.app/posts/${userId}/feed`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -19,7 +19,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
   // console.log(userId)
   const getUserPosts = async () => {
     const response = await fetch(
-      `http://lynx-social-media-app-bay.vercel.app/posts/${userId}/posts`,
+      `https://lynx-social-media-app-bay.vercel.app/posts/${userId}/posts`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

@@ -64,7 +64,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "http://lynx-social-media-app-bay.vercel.app/auth/register",
+      "https://lynx-social-media-app-bay.vercel.app/auth/register",
       {
         method: "POST",
         body: formData,
@@ -79,7 +79,7 @@ const Form = () => {
   };
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch("http://lynx-social-media-app-bay.vercel.app/auth/login", {
+    const loggedInResponse = await fetch("https://lynx-social-media-app-bay.vercel.app/auth/login", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(values),

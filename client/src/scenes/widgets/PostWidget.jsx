@@ -50,7 +50,7 @@ const PostWidget = ({
   const patchLike = async () => {
     try {
       const response = await fetch(
-        `http://lynx-social-media-app-bay.vercel.app/posts/${postId}/like`,
+        `https://lynx-social-media-app-bay.vercel.app/posts/${postId}/like`,
         {
           method: "PATCH",
           headers: {
@@ -77,7 +77,7 @@ const PostWidget = ({
       try {
         console.log(newComment);
         const response = await fetch(
-          `http://lynx-social-media-app-bay.vercel.app/posts/${postId}/comments`,
+          `https://lynx-social-media-app-bay.vercel.app/posts/${postId}/comments`,
           {
             method: "POST",
             headers: {
@@ -121,7 +121,7 @@ const PostWidget = ({
           height="auto"
           alt="post"
           style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-          src={`http://lynx-social-media-app-bay.vercel.app/assets/${picturePath}`}
+          src={`https://lynx-social-media-app-bay.vercel.app/assets/${picturePath}`}
           onDoubleClick={patchLike}
         />
       )}
